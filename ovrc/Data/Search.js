@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/A-Introduction-Topics/Getting-Started.htm'],s:['+','s'],p:[['+',2],['contains',1],['integrations',15],['processor',8],['type',18]]});

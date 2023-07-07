@@ -15,7 +15,7 @@
 	{
 		height: 100%;
 		overflow-x: hidden;
-		background-color: #2d4052;
+		background-color: #36474F;
 	}
 
 	.off-canvas-content
@@ -848,7 +848,7 @@
 
 	.off-canvas ul ul
 	{
-		background-color: #2d4052;
+		background-color: #36474F;
 	}
 
 	ul.off-canvas-list ul > li > a
@@ -883,33 +883,33 @@
 
 	ul.off-canvas-list li a:hover
 	{
-		color: #e86140;
-		background-color: #3f576e;
+		color: #ffffff;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list li.is-accordion-submenu-parent > a span.submenu-toggle:hover
@@ -919,7 +919,7 @@
 
 	ul.off-canvas-list li a.selected
 	{
-		color: #e86140;
+		color: #02A9F4;
 	}
 
 	ul.off-canvas-list ul > li > a.selected

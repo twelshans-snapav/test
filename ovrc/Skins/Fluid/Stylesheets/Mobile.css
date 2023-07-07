@@ -203,32 +203,32 @@
 	ul.off-canvas-list li a:hover
 	{
 		font-weight: bold;
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #3f576e;
+		background-color: #28353b;
 	}
 
 	#resultList .glossary .term a:hover
@@ -827,8 +827,8 @@
 
 	.title-bar .menu-icon span
 	{
-		background: #22303d url('Images/snapone-menu-icon_1.png') no-repeat center center;
-		-pie-background: #22303d url('Skins/Fluid/Stylesheets/Images/snapone-menu-icon_1.png') no-repeat center center;
+		background: transparent url('Images/snapone-menu-icon_1.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/snapone-menu-icon_1.png') no-repeat center center;
 	}
 
 	nav.title-bar .menu-icon

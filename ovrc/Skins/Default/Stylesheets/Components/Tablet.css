@@ -25,12 +25,12 @@
 		display: none;
 	}
 
-	.buttons._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component
+	.buttons._Skins_Topic_Toolbar_Skin.mc-component
 	{
 		
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button
+	._Skins_Topic_Toolbar_Skin.mc-component .button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -44,22 +44,22 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button > div
+	._Skins_Topic_Toolbar_Skin.mc-component .button > div
 	{
 		
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button .button-icon-wrapper
+	._Skins_Topic_Toolbar_Skin.mc-component .button .button-icon-wrapper
 	{
 		
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button .button-text
+	._Skins_Topic_Toolbar_Skin.mc-component .button .button-text
 	{
 		
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.collapse-all-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.collapse-all-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -73,7 +73,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.current-topic-index-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.current-topic-index-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -87,7 +87,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.expand-all-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.expand-all-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -101,7 +101,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.login-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.login-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -115,19 +115,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.next-topic-button
-	{
-		background: transparent url('Images/araknis-next-arrow.png') no-repeat center center;
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, linear-gradient(top, transparent 0%,transparent 100%);
-		-pie-background: url('Skins/Default/Stylesheets/Components/Images/araknis-next-arrow.png') no-repeat center center, linear-gradient(transparent, transparent);
-	}
-
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.previous-topic-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.next-topic-button
 	{
 		background-repeat: no-repeat;
 		background: transparent;
@@ -141,7 +129,21 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.print-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.previous-topic-button
+	{
+		background-repeat: no-repeat;
+		background: transparent;
+		background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(top, transparent 0%,transparent 100%);
+		-pie-background: linear-gradient(transparent, transparent);
+		background-position: center center;
+	}
+
+	._Skins_Topic_Toolbar_Skin.mc-component .button.print-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -155,7 +157,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.remove-highlight-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.remove-highlight-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -169,7 +171,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.select-language-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.select-language-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -183,7 +185,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.select-skin-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.select-skin-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -197,78 +199,78 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button.topic-ratings-empty-button
+	._Skins_Topic_Toolbar_Skin.mc-component .button.topic-ratings-empty-button
 	{
 		background: transparent url('Images/star-empty.png') no-repeat center center;
 		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-empty.png') no-repeat center center;
 		background-size: 16px 16px;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down
+	._Skins_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down
+	._Skins_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
+	._Skins_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
 	{
 		background-color: #E5EFF7;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down
+	._Skins_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
+	._Skins_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
 	{
 		background-color: #E5EFF7;
 	}
 
-	._Skins_Araknis_Home_Topic_Toolbar_Skin.mc-component .button-separator
+	._Skins_Topic_Toolbar_Skin.mc-component .button-separator
 	{
-		background-color: #000000;
+		background-color: #e1e1e1;
 	}
 
-	.buttons._Skins_Araknis_Topic_Toolbar_Skin.mc-component
-	{
-		
-	}
-
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button
-	{
-		background-repeat: no-repeat;
-		background: #ececec;
-		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
-		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
-		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
-		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
-		background: linear-gradient(top, #ffffff 0%,#ececec 100%);
-		-pie-background: linear-gradient(#ffffff, #ececec);
-		background-position: center center;
-	}
-
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button > div
+	.buttons._Skins_Snap_Topic_Toolbar_Skin.mc-component
 	{
 		
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button .button-icon-wrapper
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(top, #ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button > div
 	{
 		
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button .button-text
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button .button-icon-wrapper
 	{
 		
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.collapse-all-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button .button-text
+	{
+		
+	}
+
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.collapse-all-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -282,7 +284,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.current-topic-index-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.current-topic-index-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -296,7 +298,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.expand-all-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.expand-all-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -310,7 +312,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.login-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.login-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -324,31 +326,33 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.next-topic-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.next-topic-button
 	{
-		background: transparent url('Images/araknis-next-arrow.png') no-repeat center center;
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-next-arrow.png') no-repeat center center, linear-gradient(top, transparent 0%,transparent 100%);
-		-pie-background: url('Skins/Default/Stylesheets/Components/Images/araknis-next-arrow.png') no-repeat center center, linear-gradient(transparent, transparent);
+		background: transparent url('Images/snapone-next-arrow.png') no-repeat center center;
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, transparent 100%);
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,transparent 100%);
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,transparent 100%);
+		background: url('Images/snapone-next-arrow.png') no-repeat center center, linear-gradient(top, transparent 0%,transparent 100%);
+		-pie-background: url('Skins/Default/Stylesheets/Components/Images/snapone-next-arrow.png') no-repeat center center, linear-gradient(transparent, transparent);
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.previous-topic-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.previous-topic-button
 	{
-		background: transparent url('Images/araknis-previous-arrow.png') no-repeat center center;
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, -moz-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, -webkit-linear-gradient(top, transparent 0%, transparent 100%);
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, -o-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, -ms-linear-gradient(top, transparent 0%,transparent 100%);
-		background: url('Images/araknis-previous-arrow.png') no-repeat center center, linear-gradient(top, transparent 0%,transparent 100%);
-		-pie-background: url('Skins/Default/Stylesheets/Components/Images/araknis-previous-arrow.png') no-repeat center center, linear-gradient(transparent, transparent);
+		background-repeat: no-repeat;
+		background: transparent none;
+		background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+		background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+		background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+		background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+		background: linear-gradient(top, transparent 0%,transparent 100%);
+		-pie-background: linear-gradient(transparent, transparent);
+		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.print-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.print-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -362,7 +366,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.remove-highlight-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.remove-highlight-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -376,7 +380,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.select-language-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.select-language-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -390,7 +394,7 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.select-skin-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.select-skin-button
 	{
 		background-repeat: no-repeat;
 		background: #ececec;
@@ -404,39 +408,39 @@
 		background-position: center center;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button.topic-ratings-empty-button
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button.topic-ratings-empty-button
 	{
 		background: transparent url('Images/star-empty.png') no-repeat center center;
 		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-empty.png') no-repeat center center;
 		background-size: 16px 16px;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
 	{
 		background-color: #E5EFF7;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down
 	{
 		background-color: #FFFFFF;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
 	{
 		background-color: #E5EFF7;
 	}
 
-	._Skins_Araknis_Topic_Toolbar_Skin.mc-component .button-separator
+	._Skins_Snap_Topic_Toolbar_Skin.mc-component .button-separator
 	{
 		background-color: #000000;
 	}

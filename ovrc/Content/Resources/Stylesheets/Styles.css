@@ -2,6 +2,12 @@
 
 @namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 
+@font-face 
+{
+	font-family: 'Poppins';
+	src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+}
+
 :root
 {
 	--Black: #000000;
@@ -40,6 +46,7 @@
 	--c4-red: #C32032;
 	--c4-maroon: #8C2232;
 	--c4-gray: #808285;
+	--triad-gold: #98772D;
 }
 
 /* Thumbnail */
@@ -63,35 +70,32 @@ img.inline15px
 	width: auto;
 }
 
-img.thumbnail-200px
+img.thumbnail-portrait-200px
 {
 	mc-thumbnail: popup;
 	mc-thumbnail-max-height: 200px;
-	mc-thumbnail-max-width: 200px;
-	max-width: 75%;
 	height: 200 px;
+	mc-thumbnail-max-width: auto;
 }
 
-img.thumbnail-400px
+img.thumbnail-portrait-400px
 {
 	mc-thumbnail: popup;
-	max-width: 75%;
 	mc-thumbnail-max-height: 400px;
-	mc-thumbnail-max-width: 400px;
+	mc-thumbnail-max-width: auto;
 }
 
-img.thumbnail-650px
+img.thumbnail-portrait-650px
 {
 	mc-thumbnail: popup;
-	max-width: 75%;
 	mc-thumbnail-max-height: 650;
-	mc-thumbnail-max-width: 650;
+	mc-thumbnail-max-width: auto;
 }
 
 body
 {
 	color: var(--Black);
-	font-family: Poppins, Arial, Avenir, Myriad;
+	font-family: Poppins, Helvetica, Arial, Avenir, Myriad;
 }
 
 .body-container
@@ -122,7 +126,6 @@ div.GlossaryPageHeading
 	padding-bottom: 20px;
 	padding-top: 20px;
 	padding-right: 10px;
-	background-image: url('../Images/Backmatter-Heading-Background.png');
 	background-repeat: no-repeat;
 }
 
@@ -171,7 +174,6 @@ p.IndexHeading
 	padding-bottom: 20px;
 	padding-top: 12px;
 	padding-right: 10px;
-	background-image: url('../Images/Backmatter-Heading-Background.png');
 	background-repeat: no-repeat;
 }
 
@@ -187,14 +189,15 @@ p
 {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	line-height: 20pt;
 	letter-spacing: 0.25px;
 	widows: 3;
 	orphans: 3;
-	font-size: 10.5pt;
 	font-style: normal;
 	margin-left: 4mm;
 	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	mc-hyphenate: never;
 }
 
 p.table-text
@@ -258,35 +261,35 @@ p.title-page-url
 
 p.TOC1
 {
-	color: var(--Dark);
-	font-size: 19pt;
 	font-weight: normal;
-	line-height: 21pt;
 	margin-bottom: 15px;
 	margin-top: 15px;
 	page-break-after: avoid;
+	font-size: 11pt;
+	color: #000000;
+	line-height: inherit;
 }
 
 p.TOC2
 {
-	color: var(--Dark);
-	font-size: 15pt;
 	font-weight: normal;
-	line-height: 21pt;
 	margin-bottom: 13px;
 	margin-left: .5in;
 	margin-top: 13px;
+	color: #000000;
+	font-size: 11pt;
+	line-height: inherit;
 }
 
 p.TOC3
 {
-	color: var(--Dark);
-	font-size: 13pt;
-	line-height: 21pt;
 	font-weight: normal;
 	margin-bottom: 10px;
 	margin-left: 1in;
 	margin-top: 10px;
+	color: #000000;
+	font-size: 11pt;
+	line-height: inherit;
 }
 
 /* Headings */
@@ -295,7 +298,6 @@ h1
 {
 	font-weight: bold;
 	color: var(--Brand1);
-	font-size: 18pt;
 	border-top-color: #000000;
 	border-top-style: solid;
 	border-top: solid 2px #000000;
@@ -304,41 +306,46 @@ h1
 	border-top-width: 2px;
 	border-top-right-radius: 2px;
 	border-top-left-radius: 2px;
+	font-size: 24px;
+	page-break-after: avoid;
 }
 
 h2
 {
 	font-weight: bold;
-	page-break-before: always;
-	font-size: 15pt;
-	padding-left: 2mm;
+	font-size: 20px;
+	page-break-after: avoid;
+	page-break-before: inherit;
 }
 
 h3
 {
 	font-weight: bold;
-	padding-left: 4mm;
-	font-size: 12pt;
+	font-size: 16px;
+	page-break-after: avoid;
 }
 
 h4
 {
-	font-size: 11pt;
 	font-style: italic;
 	font-weight: bold;
-	padding-left: 4mm;
+	font-size: 15px;
+	padding-left: 0;
+	page-break-after: avoid;
 }
 
 h5
 {
 	font-weight: bold;
 	font-size: 10.0pt;
+	page-break-after: avoid;
 }
 
 h6
 {
 	font-weight: bold;
 	font-size: 8.0pt;
+	page-break-after: avoid;
 }
 
 /* Home page topic */
@@ -352,97 +359,6 @@ div.home-section
 {
 	padding: 5% 0;
 	border-bottom: solid 1px var(--Light);
-}
-
-div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
-{
-	mc-grid-row: true;
-	margin-left: auto;
-	margin-right: auto;
-	height: 150px;
-}
-
-div.home-tiles::before
-{
-	content: ' ';
-	display: table;
-}
-
-div.home-tiles::after
-{
-	content: ' ';
-	display: table;
-	clear: both;
-}
-
-div.home-tiles > div
-{
-	float: left;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	background-color: var(--Brand2);
-	padding: 2%;
-	height: 150px;
-	alignment: center;
-}
-
-div.home-tiles > div:nth-child(1)
-{
-	border-top: solid 3px #dddad7;
-	width: 16.667%;
-	margin-left: 0%;
-}
-
-div.home-tiles > div:nth-child(2)
-{
-	border-top: solid 3px #dddad7;
-	width: 66.667%;
-	margin-left: 0%;
-}
-
-div.home-tiles-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
-{
-	mc-grid-row: true;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-div.home-tiles-layout::before
-{
-	content: ' ';
-	display: table;
-}
-
-div.home-tiles-layout::after
-{
-	content: ' ';
-	display: table;
-	clear: both;
-}
-
-div.home-tiles-layout > div
-{
-	float: left;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-div.home-tiles-layout > div:nth-child(1)
-{
-	border-top: 2px var(--LightAlmond);
-	width: 33.33333%;
-	margin-left: 0%;
-}
-
-div.home-tiles-layout > div:nth-child(2)
-{
-	width: 66.66667%;
-	margin-left: 0%;
-}
-
-div.home-tiles-layout p
-{
-	line-height: 1.2;
 }
 
 div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
@@ -510,7 +426,6 @@ div.quick-links *	/*Text-align center set to all elements within div.quick-links
 div.topic-hero
 {
 	padding: 5%;
-	background-image: url('../Images/Hero-Image.png');
 	background-size: cover;
 	background-attachment: scroll;
 }
@@ -550,27 +465,27 @@ MadCap|breadcrumbsProxy
 
 a
 {
-	color: var(--Brand1);
+	color: var(--Coral);
 }
 
 a:link
 {
-	color: var(--Brand1);
+	color: var(--Coral);
 }
 
 a:visited
 {
-	color: var(--Brand1);
+	color: var(--DarkCoral);
 }
 
 MadCap|dropDown
 {
-	mc-open-image: url('../Images/Minus.png');
-	mc-closed-image: url('../Images/Plus.png');
 	padding: 10px 0;
 	mc-image-position: right;
 	mc-image-spacing: 10px;
 	border-bottom: none 0px #000000;
+	mc-closed-image: url('../Images/template/mc-dropdown-closed.png');
+	mc-open-image: url('../Images/template/mc-dropdown-open.png');
 }
 
 MadCap|dropDownBody
@@ -581,13 +496,14 @@ MadCap|dropDownBody
 
 MadCap|dropDownHotspot
 {
+	color: var(--Coral);
 	cursor: hand;
 	text-decoration: none;
 	font-weight: bold;
 	border-bottom: none;
 	color: #000000;
-	font-size: 15pt;
 	padding-left: 2mm;
+	font-size: 14px;
 }
 
 MadCap|expandingBody
@@ -610,7 +526,7 @@ MadCap|xref
 	font-weight: bold;
 	mc-format: '{para}';
 	text-decoration: underline;
-	color: var(--Brand1);
+	color: var(--Coral);
 }
 
 /* Lists */
@@ -684,7 +600,7 @@ th
 
 tbody
 {
-	font-size: 10.5pt;
+	font-size: 14px;
 }
 
 ol ol
@@ -709,7 +625,7 @@ ul ul
 
 MadCap|dropDownHotspot:hover
 {
-	color: var(--Coral);
+	color: var(--DarkCoral);
 }
 
 div.Tiles-3-3-3-3	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
@@ -843,13 +759,6 @@ div.Tiles-9-3 > div:nth-child(2)
 	margin-left: 0%;
 }
 
-div.home-tiles > div:nth-child(3)
-{
-	border-top: solid 3px #dddad7;
-	width: 16.667%;
-	margin-left: 0%;
-}
-
 div.homepage-banner	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
 	mc-grid-row: true;
@@ -884,35 +793,318 @@ div.homepage-banner > div:nth-child(1)
 	margin-left: 0%;
 }
 
+div.Tiles-4-4-4	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-4-4-4::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-4-4-4::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-4-4-4 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-4-4-4 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Tiles-4-4-4 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Tiles-4-4-4 > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Tiles-8-4	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-8-4::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-8-4::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-8-4 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-8-4 > div:nth-child(1)
+{
+	width: 66.66667%;
+	margin-left: 0%;
+}
+
+div.Tiles-8-4 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Tiles-3-9	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-3-9::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-3-9::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-3-9 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-3-9 > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.Tiles-3-9 > div:nth-child(2)
+{
+	width: 75%;
+	margin-left: 0%;
+}
+
+div.Tiles-4-8	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-4-8::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-4-8::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-4-8 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-4-8 > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 0%;
+}
+
+div.Tiles-4-8 > div:nth-child(2)
+{
+	width: 66.667%;
+	margin-left: 0%;
+}
+
+div.Tiles-2-10	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-2-10::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-2-10::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-2-10 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-2-10 > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.Tiles-2-10 > div:nth-child(2)
+{
+	width: 83.333%;
+	margin-left: 0%;
+}
+
+div.Tiles-10-2	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Tiles-10-2::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Tiles-10-2::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Tiles-10-2 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Tiles-10-2 > div:nth-child(1)
+{
+	width: 83.333%;
+	margin-left: 0%;
+}
+
+div.Tiles-10-2 > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 165px;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: var(--LightAlmond);
+	box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 4.167%;
+}
+
+div.home-tiles > div > a
+{
+	display: block;
+	padding: 1em;
+}
+
+div.home-tiles > div:hover
+{
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 4.167%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 25%;
+	margin-left: 8.3333%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 8.3333%;
+	margin-right: 4.167%;
+}
+
+MadCap|slideshow
+{
+	text-align: left;
+	margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1279px)
 {
 	/* Home page topic */
-
-	div.home-tiles > div:nth-child(1)
-	{
-		border-top: 2px var(--LightAlmond);
-		width: 16.667%;
-		margin-left: 0%;
-	}
-
-	div.home-tiles > div:nth-child(2)
-	{
-		border-top: 2px var(--LightAlmond);
-		width: 66.667%;
-		margin-left: 0%;
-	}
-
-	div.home-tiles-layout > div:nth-child(1)
-	{
-		width: 40%;
-		margin-left: 30%;
-	}
-
-	div.home-tiles-layout > div:nth-child(2)
-	{
-		width: 90%;
-		margin-left: 5%;
-	}
 
 	div.quick-links > div:nth-child(1)
 	{
@@ -997,13 +1189,6 @@ div.homepage-banner > div:nth-child(1)
 		margin-left: 0%;
 	}
 
-	div.home-tiles > div:nth-child(3)
-	{
-		border-top: 2px var(--LightAlmond);
-		width: 8.3333%;
-		margin-left: 0%;
-	}
-
 	h1.reg
 	{
 		
@@ -1026,29 +1211,119 @@ div.homepage-banner > div:nth-child(1)
 		width: 33.33333%;
 		margin-left: 0%;
 	}
+
+	div.Tiles-4-4-4 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-4-4 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-4-4 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-8-4 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-8-4 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-3-9 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-3-9 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-8 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-8 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-2-10 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-2-10 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-10-2 > div:nth-child(1)
+	{
+		width: 66.66667%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-10-2 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 4.167%;
+		border: 2px var(--LightAlmond);
+		border-radius: 5px;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 8.3333%;
+		border: 2px var(--LightAlmond);
+		border-radius: 5px;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 25%;
+		margin-right: 4.167%;
+		margin-left: 8.3333%;
+		border: 2px var(--LightAlmond);
+		border-radius: 5px;
+	}
+
+	div.home-tiles
+	{
+		
+	}
 }
 
 @media only screen and (max-width: 767px)
 {
 	/* Home page topic */
-
-	div.home-tiles > div:nth-child(1)
-	{
-		width: 16.667%;
-		margin-left: 0%;
-	}
-
-	div.home-tiles > div:nth-child(2)
-	{
-		margin-top: 5%;
-		width: 50%;
-		margin-left: 0%;
-	}
-
-	div.home-tiles-layout p
-	{
-		line-height: 1.2;
-	}
 
 	div.quick-links > div:nth-child(1)
 	{
@@ -1080,7 +1355,7 @@ div.homepage-banner > div:nth-child(1)
 		margin-left: 25.5%;
 	}
 
-	img.thumbnail-100px
+	img.thumbnail-portrait-100px
 	{
 		mc-thumbnail-max-height: 100px;
 		mc-thumbnail-max-width: 100px;
@@ -1134,16 +1409,108 @@ div.homepage-banner > div:nth-child(1)
 		margin-left: 0%;
 	}
 
-	div.home-tiles > div:nth-child(3)
-	{
-		width: 16.667%;
-		margin-left: 0%;
-	}
-
 	div.homepage-banner > div:nth-child(1)
 	{
 		width: 100%;
 		margin-left: 0%;
+	}
+
+	div.Tiles-4-4-4 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-4-4 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-4-4 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-8-4 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-8-4 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-3-9 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-3-9 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-8 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-4-8 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-2-10 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-2-10 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-10-2 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Tiles-10-2 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		mc-breadcrumbs-prefix: 'inherit';
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0px;
 	}
 }
 
@@ -1348,13 +1715,12 @@ div.sticky
 	position: fixed;
 }
 
-img.thumbnail-100px
+img.thumbnail-portrait-100px
 {
 	mc-thumbnail: popup;
-	mc-thumbnail-max-height: 200px;
-	mc-thumbnail-max-width: 200px;
-	max-width: 75%;
-	height: 200px;
+	mc-thumbnail-max-width: auto;
+	mc-thumbnail-max-height: 100px;
+	height: 100px;
 }
 
 p.center-image
@@ -1377,14 +1743,13 @@ p.comments
 	mc-auto-number-format: '{b}{color #ff1493}# {/color}{/b}';
 }
 
-img.thumbnail-150px
+img.thumbnail-portrait-150px
 {
 	mc-thumbnail: popup;
-	max-width: 75%;
 	height: 150 px;
 	mc-thumbnail-max-height: 150px;
-	mc-thumbnail-max-width: 150px;
 	padding: 8px 50px 8px 0px;
+	mc-thumbnail-max-width: auto;
 }
 
 img.homepage-icon
@@ -1398,6 +1763,72 @@ img.homepage-icon
 	mc-thumbnail-max-width: 100%;
 	padding: 0px;
 	height: 100%;
-	max-width: 100%;
+	max-height: 100px;
+	max-width: auto;
+}
+
+div.html-footer
+{
+	width: 100%;
+	background-color: #dddad7;
+}
+
+img.thumbnail-landscape-100px
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: 100px;
+	mc-thumbnail-max-height: auto;
+	width: 150px;
+	height: auto;
+}
+
+img.thumbnail-landscape-150px
+{
+	mc-thumbnail: popup;
+	padding: 8px 50px 8px 0px;
+	mc-thumbnail-max-width: 150px;
+	mc-thumbnail-max-height: auto;
+	height: auto;
+	width: 150px;
+}
+
+img.thumbnail-landscape-200px
+{
+	mc-thumbnail: popup;
+	width: 200px;
+	height: auto;
+	mc-thumbnail-max-width: 200px;
+	mc-thumbnail-max-height: auto;
+}
+
+img.thumbnail-landscape-400px
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: 400px;
+	mc-thumbnail-max-height: auto;
+}
+
+img.thumbnail-landscape-650px
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: 650px;
+	mc-thumbnail-max-height: auto;
+}
+
+div.noPageBreak
+{
+	page-break-inside: avoid;
+}
+
+div.slideshow-text
+{
+	height: 220px;
+}
+
+img.thumbnail-portrait-350px
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: auto;
+	mc-thumbnail-max-height: 350px;
 }
 

@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Intro.htm'],s:['0mm'],p:[['0mm',2]]});
